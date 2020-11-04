@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <table>
+       <thead>
+           <tr>
+               <th>(scope='col') #</th>
+               <th>(scope='col') Color</th>
+               <th>(scope='col') Modelo</th>
+               <th>(scope='col') Ubicacion</th>
+           </tr>
+       </thead>
+       <tbody>
+           each bici in bicis
+           <tr>
+               <th>(scope='row') = bici.id</th>
+               <td>= bici.color</td>
+               <td>= bici.modelo</td>
+               <td>= bici.ubicacion</td>
+           </tr>
+
+       </tbody>
+   </table>
+</body>
+</html>
