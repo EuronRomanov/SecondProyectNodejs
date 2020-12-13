@@ -3,3 +3,9 @@ a {
   color: #00B7FF;
 }
 #mapid { height: 600px; }
+
+body{
+  padding: 50px;
+  padding-top: 5rem;
+}
+
