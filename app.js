@@ -1,3 +1,4 @@
+require('dotenv').config();
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -37,7 +38,9 @@ app.set('secretKey', 'jwt_pwd_!!223344');
 //mongoose
 const mongoose = require('mongoose');
 const { Console } = require('console');
-var mongoDB = 'mongodb://localhost/red_bicicletas';
+//var mongoDB = 'mongodb://localhost/red_bicicletas';
+//var mongoDB = 'mongodb+srv://admin20:pm4VyAYv26ijytSf@red-bicicletas.d88ug.mongodb.net/test?retryWrites=true&w=majority';
+var mongoDB =process.env.MONGO_URI;
 mongoose.connect(mongoDB, {useNewUrlParser: true,useUnifiedTopology: true});
 mongoose.Promise= global.Promise;
 var db = mongoose.connection;
